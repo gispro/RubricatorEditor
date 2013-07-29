@@ -1,0 +1,149 @@
+.gxp-isservice{
+    background: url(../img/isservice.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+.gxp-islayer{
+    background: url(../img/islayer.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.gxp-feed{
+    background: url(../img/feed.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.gxp-control{
+    background: url(../img/control.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+
+.x-tree-node .gxp-isservice, .x-grid-tree-node-collapsed .gxp-isservice{
+    background: url(../img/isservice.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.x-grid-tree-node-expanded .gxp-isservice {
+    background: url(../img/isservice.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.x-tree-node .gxp-islayer, .x-grid-tree-node-collapsed .gxp-islayer{
+    background: url(../img/islayer.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.x-grid-tree-node-expanded .gxp-islayer {
+    background: url(../img/islayer.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.x-tree-node .gxp-feed, .x-grid-tree-node-collapsed .gxp-feed{
+    background: url(../img/feed.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.x-grid-tree-node-expanded .x-tree-icon-parent .gxp-feed {
+    background: url(../img/feed.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.x-tree-node .gxp-control, .x-grid-tree-node-collapsed .gxp-control{
+    background: url(../img/control.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+.x-grid-tree-node-expanded .gxp-control {
+    background: url(../img/control.png);
+	background-repeat: no-repeat;
+	height: 18px;
+	vertical-align: middle;
+}
+
+
+
+.olControlPanPanel div {
+    background-image:url(../img/tool-sprites.gif);
+    height:15px;
+    width:15px;
+    /* workaround for button height in IE */
+    font-size:0px;
+}
+
+.olControlPanPanel .olControlPanNorthItemInactive {
+    background-position:15px -60px;
+    left:16px
+}
+.olControlPanPanel .olControlPanEastItemInactive {
+    background-position:15px -120px;
+    left: 30px;
+    top: 16px;
+}
+.olControlPanPanel .olControlPanSouthItemInactive {
+    background-position:15px -75px;
+    left: 16px;
+    top: 32px;
+}
+.olControlPanPanel .olControlPanWestItemInactive {
+    background-position:15px -105px;
+    left: 2px;
+    top: 16px;
+}
+
+.olControlZoomPanel { 
+    left:21px;
+}
+
+.olControlZoomPanel div {
+    background-image:url(../img/tool-sprites.gif);
+    height:15px;
+    width:15px;
+    /* workaround for button height in IE */
+    font-size:0px;
+}
+
+.olControlZoomPanel .olControlZoomInItemInactive {
+    background-position:15px -240px;
+}
+
+.olControlZoomPanel .olControlZoomToMaxExtentItemInactive {
+    display: none;
+}
+
+.olControlZoomPanel .olControlZoomOutItemInactive {
+    background-position:15px -255px;
+    top: 123px;
+}
+
+.olControlScaleLine {
+    font-family: tahoma,arial,helvetica,sans-serif;
+}
+
+.olControlAttribution {
+    bottom: 5px;
+    font-size: 10px;
+    left: 10px;
+    right: inherit;
+}

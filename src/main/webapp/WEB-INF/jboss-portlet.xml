@@ -1,0 +1,67 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ JBoss, a division of Red Hat                                              ~
+  ~ Copyright 2006, Red Hat Middleware, LLC, and individual                   ~
+  ~ contributors as indicated by the @authors tag. See the                    ~
+  ~ copyright.txt in the distribution for a full listing of                   ~
+  ~ individual contributors.                                                  ~
+  ~                                                                           ~
+  ~ This is free software; you can redistribute it and/or modify it           ~
+  ~ under the terms of the GNU Lesser General Public License as               ~
+  ~ published by the Free Software Foundation; either version 2.1 of          ~
+  ~ the License, or (at your option) any later version.                       ~
+  ~                                                                           ~
+  ~ This software is distributed in the hope that it will be useful,          ~
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of            ~
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU          ~
+  ~ Lesser General Public License for more details.                           ~
+  ~                                                                           ~
+  ~ You should have received a copy of the GNU Lesser General Public          ~
+  ~ License along with this software; if not, write to the Free               ~
+  ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA        ~
+  ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.                  ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!DOCTYPE portlet-app PUBLIC
+   "-//JBoss Portal//DTD JBoss Portlet 2.6//EN"
+   "http://www.jboss.org/portal/dtd/jboss-portlet_2_6.dtd">
+
+<portlet-app>
+   <app-id>RubricatorEditor</app-id>
+   <portlet>
+      <portlet-name>RubricatorEditor</portlet-name>
+      <header-content>
+		<title>Редактор рубрикатора</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+
+        <script src="lib/ExtJS/ext-all.js"></script>
+        <link href="lib/ExtJS/ext-all.css" type="text/css" charset='utf-8' rel="stylesheet"/>
+        <link href="css/all.css" type="text/css" charset='utf-8' rel="stylesheet"/>
+
+        <script src="./lib/OpenLayers/OpenLayers.js"></script>        
+        <script>
+            window.CONFIG = {
+                METADATA_URL : "http://www.esimo.ru/srbd_data/resource?id=",
+                CACHE_URL : "http://gis.esimo.ru/cache/service/wms",
+                PROXY : "./proxy.jsp?",
+                OVROOT : "http://oceanviewer.ru/ovdev/"
+            }
+        </script>
+        <script>
+            Ext.Loader.setConfig({
+                enabled: true,
+                disableCaching: false,
+                paths: {
+                    GeoExt: "lib/GeoExt"
+                }
+            });
+
+        </script>
+        <script src="script/RubricatorPanel.js"></script>
+        <script src="script/RubricatorTree.js"></script>
+        <script src="script/RubricatorPreview.js"></script>
+
+
+        <script src="script/app.js"></script>          
+      </header-content>
+   </portlet>
+</portlet-app>
